@@ -1,10 +1,10 @@
 package kioskMenu.commonData;
 
-import ch2.kioskMenu.DrinkMenu.DrinkMenu01_Kind;
-import ch2.kioskMenu.DrinkMenu.DrinkMenu02_Temp;
-import ch2.kioskMenu.DrinkMenu.DrinkMenu03_Size;
-import ch2.kioskMenu.DrinkMenu.DrinkMenu04_Extra;
-import ch2.kioskMenu.FoodMenu.FoodMenu01_Kind;
+import kioskMenu.DrinkMenu.DrinkMenu01_Kind;
+import kioskMenu.DrinkMenu.DrinkMenu02_Temp;
+import kioskMenu.DrinkMenu.DrinkMenu03_Size;
+import kioskMenu.DrinkMenu.DrinkMenu04_Extra;
+import kioskMenu.FoodMenu.FoodMenu01_Kind;
 
 import java.util.HashMap;
 import java.util.Map;
