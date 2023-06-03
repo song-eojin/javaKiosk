@@ -17,7 +17,7 @@ public class Member01_Scan {
         return memberOpt;
     }
 
-    private void memberOptScan() {
+    public void memberOptScan() {
         System.out.println("---------------------");
         System.out.println("(Member01_Scan.memberOptScan())\n");
 
@@ -26,7 +26,7 @@ public class Member01_Scan {
         //Member02_Process 여기서 Scan 받은 입력값 처리하기
         new Member02_Process().memberOptProcess();
     }
-    private void memberDataScan(){
+    public void memberDataScan(){
         System.out.println("---------------------");
         System.out.println("(Member01_Scan.memberDataScan())\n");
 

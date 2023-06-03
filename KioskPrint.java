@@ -1,6 +1,6 @@
-import ch2.kioskMember.memberFlow.Member01_Scan;
+import kioskMember.memberFlow.Member01_Scan;
 
-public class KioskPrint {
+public class KioskPrint extends Member01_Scan {
 
     /*1) 회원/비회원 선택*/
     private void printMemberOpt() {
@@ -23,7 +23,6 @@ public class KioskPrint {
 
         //MenuScan 클래스로부터 입력받기
         new Member01_Scan();
-    }
 
     //3) 메뉴 주문하기
     private void printOrderOpt() {
