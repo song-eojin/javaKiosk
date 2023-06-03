@@ -1,4 +1,4 @@
-package kioskMenu.MenuOption;
+package kioskMenu.menuOption;
 
 public enum MenuOpt01_Kind {
     GREEN_TEA,

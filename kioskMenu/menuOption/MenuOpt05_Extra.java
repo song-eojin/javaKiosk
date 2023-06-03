@@ -1,4 +1,4 @@
-package kioskMenu.MenuOption;
+package kioskMenu.menuOption;
 
 public enum MenuOpt05_Extra {
     WHIPPED_CREAM,

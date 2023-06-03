@@ -1,6 +1,6 @@
-package kioskMenu.MenuGrouping;
+package kioskMenu.menuGrouping;
 
-import kioskMenu.MenuOption.*;
+import kioskMenu.menuOption.*;
 
 import java.util.HashMap;
 import java.util.Map;

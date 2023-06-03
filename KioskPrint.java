@@ -2,17 +2,19 @@ import kioskMember.memberFlow.Member01_Scan;
 
 public class KioskPrint extends Member01_Scan {
 
+    public KioskPrint(){
+        printMemberOpt();
+    }
+
     /*1) 회원/비회원 선택*/
     private void printMemberOpt() {
-        System.out.println("\n-------------------------");
-        System.out.println("(KioskPrint)\n");
-
+        System.out.println("-------------------------");
         System.out.println("아래에서 주문방식을 골라 입력해주세요.");
-        System.out.println("1. 비회원주문\n2. 회원주문");
+        System.out.println("1. 비회원주문\n2. 회원주문\n");
+        System.out.print("입력 : ");
 
         //Member01_Scan 클래스로부터 입력받기
-        Member01_Scan scan = new Member01_Scan();
-        scan.memberOptScan();
+        new Member01_Scan().memberOptScan();
     }
 
     //2) 메뉴카테고리 옵션선택

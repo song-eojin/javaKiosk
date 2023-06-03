@@ -1,4 +1,4 @@
-package kioskMenu.MenuOption;
+package kioskMenu.menuOption;
 
 public enum MenuOpt04_Size {
     TALL, //354ml
