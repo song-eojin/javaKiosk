@@ -1,6 +1,11 @@
 package kioskMenu.menuGrouping;
 
-import kioskMenu.menuOption.*;
+import kioskMenu.menuData.FoodData.FoodKindData;
+import kioskMenu.menuData.commonData.TakeoutData;
+import kioskMenu.menuData.drinkData.DrinkExtraData;
+import kioskMenu.menuData.drinkData.DrinkKindData;
+import kioskMenu.menuData.drinkData.DrinkSizeData;
+import kioskMenu.menuData.drinkData.DrinkTempData;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -36,33 +41,33 @@ public class PriceGrouping {
     }
 
     public void setDrinkKindMap() {
-        DrinkKinkMap.put(MenuOpt01_Kind.GREEN_TEA.name(), price11);
-        DrinkKinkMap.put(MenuOpt01_Kind.PEACH_TEA.name(), price12);
-        DrinkKinkMap.put(MenuOpt01_Kind.CHAI_TEA.name(), price11);
-        DrinkKinkMap.put(MenuOpt01_Kind.AMERICANO.name(), price11);
-        DrinkKinkMap.put(MenuOpt01_Kind.ESPRESSO.name(), price11);
-        DrinkKinkMap.put(MenuOpt01_Kind.MOCHA.name(), price12);
-        DrinkKinkMap.put(MenuOpt01_Kind.VIENNA.name(), price12);
-        DrinkKinkMap.put(MenuOpt01_Kind.CORTADO.name(), price12);
-        DrinkKinkMap.put(MenuOpt01_Kind.CAFE_LATTE.name(), price12);
-        DrinkKinkMap.put(MenuOpt01_Kind.CAPPUCCINO.name(), price13);
-        DrinkKinkMap.put(MenuOpt01_Kind.MACCHIATO.name(), price13);
-        DrinkKinkMap.put(MenuOpt01_Kind.LEMONADE.name(), price13);
-        DrinkKinkMap.put(MenuOpt01_Kind.CHOCOLATE_LATTE.name(), price13);
-        DrinkKinkMap.put(MenuOpt01_Kind.GREEN_TEA_LATTE.name(), price14);
-        DrinkKinkMap.put(MenuOpt01_Kind.ORANGE_JUICE.name(), price12);
-        DrinkKinkMap.put(MenuOpt01_Kind.STRAWBERRY_JUICE.name(), price14);
-        DrinkKinkMap.put(MenuOpt01_Kind.PINEAPPLE_JUICE.name(), price15);
-        DrinkKinkMap.put(MenuOpt01_Kind.WATERMELON_JUICE.name(), price15);
-        DrinkKinkMap.put(MenuOpt01_Kind.MANGO_JUICE.name(), price16); //7500??
+        DrinkKinkMap.put(DrinkKindData.GREEN_TEA.name(), price11);
+        DrinkKinkMap.put(DrinkKindData.PEACH_TEA.name(), price12);
+        DrinkKinkMap.put(DrinkKindData.CHAI_TEA.name(), price11);
+        DrinkKinkMap.put(DrinkKindData.AMERICANO.name(), price6);
+        DrinkKinkMap.put(DrinkKindData.ESPRESSO.name(), price11);
+        DrinkKinkMap.put(DrinkKindData.MOCHA.name(), price12);
+        DrinkKinkMap.put(DrinkKindData.VIENNA.name(), price12);
+        DrinkKinkMap.put(DrinkKindData.CORTADO.name(), price12);
+        DrinkKinkMap.put(DrinkKindData.CAFE_LATTE.name(), price12);
+        DrinkKinkMap.put(DrinkKindData.CAPPUCCINO.name(), price13);
+        DrinkKinkMap.put(DrinkKindData.MACCHIATO.name(), price13);
+        DrinkKinkMap.put(DrinkKindData.LEMONADE.name(), price13);
+        DrinkKinkMap.put(DrinkKindData.CHOCOLATE_LATTE.name(), price13);
+        DrinkKinkMap.put(DrinkKindData.GREEN_TEA_LATTE.name(), price14);
+        DrinkKinkMap.put(DrinkKindData.ORANGE_JUICE.name(), price12);
+        DrinkKinkMap.put(DrinkKindData.STRAWBERRY_JUICE.name(), price14);
+        DrinkKinkMap.put(DrinkKindData.PINEAPPLE_JUICE.name(), price15);
+        DrinkKinkMap.put(DrinkKindData.WATERMELON_JUICE.name(), price15);
+        DrinkKinkMap.put(DrinkKindData.MANGO_JUICE.name(), price16);
     }
     public Map<String, Integer> getDrinkKindMap() {
         return DrinkKinkMap;
     }
 
     public void setDrinkTempMap() {
-        DrinkTempMap.put(MenuOpt03_Temp.ICE.name(), price1); //500?? ???
-        DrinkTempMap.put(MenuOpt03_Temp.HOT.name(), price0); //?????? ????
+        DrinkTempMap.put(DrinkTempData.ICE.name(), price1);
+        DrinkTempMap.put(DrinkTempData.HOT.name(), price0);
     }
     public Map<String, Integer> getDrinkTempMap() {
         return DrinkTempMap;
@@ -72,33 +77,47 @@ public class PriceGrouping {
         return DrinkSizeMap;
     }
     public void setDrinkSizeMap() {
-        DrinkSizeMap.put(MenuOpt04_Size.TALL.name(), price0);
-        DrinkSizeMap.put(MenuOpt04_Size.GRANDE.name(), price2); //1000?? ???
-        DrinkSizeMap.put(MenuOpt04_Size.VENTI.name(), price3); //1500?? ???
+        DrinkSizeMap.put(DrinkSizeData.TALL.name(), price0);
+        DrinkSizeMap.put(DrinkSizeData.GRANDE.name(), price2);
+        DrinkSizeMap.put(DrinkSizeData.VENTI.name(), price3);
     }
 
     public Map<String, Integer> getDrinkExtraMap() {
         return DrinkExtraMap;
     }
     public void setDrinkExtraMap() {
-        DrinkExtraMap.put(MenuOpt05_Extra.WHIPPED_CREAM.name(), price1); //500?? ???
-        DrinkExtraMap.put(MenuOpt05_Extra.LOWFAT_MILK.name(), price2); //1000?? ???
-        DrinkExtraMap.put(MenuOpt05_Extra.SOY_MILK.name(), price3); //1500?? ???
-        DrinkExtraMap.put(MenuOpt05_Extra.ALMOND_MILK.name(), price4); //2000?? ???
-        DrinkExtraMap.put(MenuOpt05_Extra.CARAMEL_SYRUP.name(), price1);
-        DrinkExtraMap.put(MenuOpt05_Extra.HAZELNUT_SYRUP.name(), price1);
-        DrinkExtraMap.put(MenuOpt05_Extra.VANILLA_SYRUP.name(), price1);
-        DrinkExtraMap.put(MenuOpt05_Extra.CHOCOLATE_SYRUP.name(), price1);
-        DrinkExtraMap.put(MenuOpt05_Extra.SUGAR_FREE_SYRUP.name(), price2);
-        DrinkExtraMap.put(MenuOpt05_Extra.ONE_ESPRESSO_SHOT.name(), price1);
-        DrinkExtraMap.put(MenuOpt05_Extra.TWO_ESPRESSO_SHOT.name(), price2);
+        DrinkExtraMap.put(DrinkExtraData.WHIPPED_CREAM.name(), price1);
+        DrinkExtraMap.put(DrinkExtraData.LOWFAT_MILK.name(), price2);
+        DrinkExtraMap.put(DrinkExtraData.SOY_MILK.name(), price3);
+        DrinkExtraMap.put(DrinkExtraData.ALMOND_MILK.name(), price4);
+        DrinkExtraMap.put(DrinkExtraData.CARAMEL_SYRUP.name(), price1);
+        DrinkExtraMap.put(DrinkExtraData.HAZELNUT_SYRUP.name(), price1);
+        DrinkExtraMap.put(DrinkExtraData.VANILLA_SYRUP.name(), price1);
+        DrinkExtraMap.put(DrinkExtraData.CHOCOLATE_SYRUP.name(), price1);
+        DrinkExtraMap.put(DrinkExtraData.SUGAR_FREE_SYRUP.name(), price2);
+        DrinkExtraMap.put(DrinkExtraData.ONE_ESPRESSO_SHOT.name(), price1);
+        DrinkExtraMap.put(DrinkExtraData.TWO_ESPRESSO_SHOT.name(), price2);
     }
 
+    public void setFoodKindMap() {
+        FoodKindMap.put(FoodKindData.GUM.name(), price4);
+        FoodKindMap.put(FoodKindData.YOGURT.name(), price5);
+        FoodKindMap.put(FoodKindData.CAKE.name(), price6);
+        FoodKindMap.put(FoodKindData.COOKIES.name(), price5);
+        FoodKindMap.put(FoodKindData.CHIPS.name(), price5);
+        FoodKindMap.put(FoodKindData.POPCORN.name(), price5);
+        FoodKindMap.put(FoodKindData.BAGEL.name(), price6);
+        FoodKindMap.put(FoodKindData.CROISSANT.name(), price6);
+        FoodKindMap.put(FoodKindData.SCONE.name(), price6);
+        FoodKindMap.put(FoodKindData.MADELEINES.name(), price5);
+    }
+    public Map<String, Integer> getFoodKindMap() { return FoodKindMap; }
+
+    public void setTakeoutMap() {
+        TakeoutMap.put(TakeoutData.STORE.name(), price0);
+        TakeoutMap.put(TakeoutData.TAKEOUT.name(), price0);
+    }
     public Map<String, Integer> getTakeoutMap() {
         return TakeoutMap;
-    }
-    public void setTakeoutMap() {
-        TakeoutMap.put(MenuOpt06_Takeout.STORE.name(), price0);
-        TakeoutMap.put(MenuOpt06_Takeout.TAKEOUT.name(), price0);
     }
 }

@@ -1,6 +1,5 @@
 package kioskMenu.menuData.FoodData;
 
-/*���� �޴� : ����*/
 public enum FoodKindData {
     GUM,
     YOGURT,

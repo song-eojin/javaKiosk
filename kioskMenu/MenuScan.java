@@ -1,10 +1,10 @@
-package kioskMenu.menuFlow;
+package kioskMenu;
 
 import interfaces.Scan;
 
 import java.util.Scanner;
 
-public class Menu01_Scan implements Scan {
+public class MenuScan implements Scan {
     private int menuCategory;
     private Scanner scanner = new Scanner(System.in);
 

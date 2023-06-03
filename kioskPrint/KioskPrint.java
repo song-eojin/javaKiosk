@@ -1,9 +1,9 @@
 package kioskPrint;
 
-import kioskMember.memberFlow.Member01_Scan;
-import kioskMenu.menuFlow.Menu01_Scan;
+import kioskMember.MemberScan;
+import kioskMenu.MenuScan;
 
-public class KioskPrint extends Member01_Scan {
+public class KioskPrint extends MemberScan {
 
     public KioskPrint(){
         printStart();
@@ -17,17 +17,17 @@ public class KioskPrint extends Member01_Scan {
 
     //2) 메뉴카테고리 옵션선택
     private void printMenuCate() {
-        System.out.println("\n-------------------------");
-        System.out.println("아래에서 메뉴카테고리을 골라 입력해주세요.\n\n");
+        System.out.println("-------------------------");
+        System.out.println("아래에서 메뉴카테고리을 골라 입력해주세요.\n");
         System.out.println("1. DrinkMenu 보기\n2. FoodMenu 보기");
 
         //MenuScan 클래스로부터 입력받기
         System.out.print("\n입력 : ");
-        new Menu01_Scan().scan();
+        new MenuScan().scan();
     }
 
     //3)
-    private void printMenuPan(){
+    private void printDrinkMenu(){
 
     }
     //4) 메뉴 주문하기
