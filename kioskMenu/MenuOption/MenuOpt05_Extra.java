@@ -1,6 +1,6 @@
-package kioskMenu.DrinkMenu;
+package kioskMenu.MenuOption;
 
-public enum DrinkMenu04_Extra {
+public enum MenuOpt05_Extra {
     WHIPPED_CREAM,
     LOWFAT_MILK,
     SOY_MILK,

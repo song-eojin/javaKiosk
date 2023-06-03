@@ -1,6 +1,6 @@
-package kioskMenu.DrinkMenu;
+package kioskMenu.MenuOption;
 
-public enum DrinkMenu01_Kind {
+public enum MenuOpt01_Kind {
     GREEN_TEA,
     PEACH_TEA,
     CHAI_TEA,
