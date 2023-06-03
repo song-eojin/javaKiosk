@@ -23,16 +23,17 @@ public class KioskPrint extends Member01_Scan {
 
         //MenuScan 클래스로부터 입력받기
         new Member01_Scan();
+    }
 
     //3) 메뉴 주문하기
-    private void printOrderOpt() {
-
-        //OrderScan
-    }
-
-
-    private void printPaymentOpt() {
-        //4) 결제방식 옵션선택
-    }
+//    private void printOrderOpt() {
+//
+//        //OrderScan
+//    }
+//
+//
+//    private void printPaymentOpt() {
+//        //4) 결제방식 옵션선택
+//    }
 }
 
